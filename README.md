@@ -23,13 +23,16 @@ The business wants to maximize either customer responses or revenue from marketi
 ![image](https://github.com/user-attachments/assets/a5187140-0c84-4129-a4e7-d1f045f41823)
 Product Type 1 received a significantly better response rate compared to Product Type 2
 
+
 - 2. Average response rate by milestone
 ![image](https://github.com/user-attachments/assets/831cd695-8106-426f-8781-055a2fa7fd1e)
 The 12-month milestone is receiving an exceptionally high response rate compared to the other durations
 
+
 - 3. Response rate by target group
 ![image](https://github.com/user-attachments/assets/4fcefc5f-6741-4e24-a60a-7090f6033032)
 The average response rate of the targeted group is only slightly higher—by around 0.2%—but given the context, this difference is considered significant.
+
 
 - 4. Target vs Control response rate by campaign month
 ![image](https://github.com/user-attachments/assets/4edb259c-d26b-4876-9234-86ad9acb4947)
