@@ -11,6 +11,13 @@ The business wants to maximize either customer responses or revenue from marketi
 - Optimize budget allocation using linear programming
 - Visualize insights and recommendations using Power BI
 
+  ## Tools & Tech Stack
+- Python (Pandas, Scikit-learn, PuLP)
+- Excel (initial exploration)
+- Power BI for dashboards
+- GitHub for version control
+
+
   ## Project Workflow
   ### Day 1: Data Understanding & Preprocessing
 - Explored the dataset structure
@@ -39,7 +46,58 @@ The average response rate of the targeted group is only slightly higher—by aro
 The response rates for the campaign months of December and January are significantly higher compared to the other months. Therefore, if we are planning to launch a new campaign, these months should be prioritized
 
 
+### Day 2: Modeling & ROI Simulation
+- Built a Random Forest Classifier to predict `response_flag`
+- Scored all segments with `response_score`
+- Simulated thresholds (1%, 5%, 10%, etc.) to evaluate ROI
+- Visualized results in Power BI
 
+ Top features from a logistic regression model
+ ![image](https://github.com/user-attachments/assets/08a26d63-827c-4f93-b786-ca6001d24b9b)
+ These features significantly influenced the model’s ability to predict positive responses. They also guided the optimization strategy by highlighting high-potential segments.
+
+Top features from a Random Forest model
+![image](https://github.com/user-attachments/assets/bac84e35-27ae-4ce5-9c6d-607dcd41b573)
+
+Simulated thresholds (1%, 5%, 10%, etc.) to evaluate ROI
+![image](https://github.com/user-attachments/assets/3361c167-6e91-4096-914b-a5cd27123832)
+
+![image](https://github.com/user-attachments/assets/e5271ba6-e876-4666-9e77-2e68fe5aa44f)
+We can clearly observe that the selected records and expected response begin to diverge after the 5% threshold. Based on both ROI and threshold analysis, there is a significant drop in ROI beyond the 5% mark, indicating diminishing returns
+
+Campaign segment performance
+![image](https://github.com/user-attachments/assets/5eb458d8-e62e-4dc3-be8f-d3548f013f92)
+Scored Campaign Segments using a model (Random Forest) → response_score
+The code in the snapshot generates a summary table of segment performance, which serves as a valuable tool for optimizing budget allocation
+
+Dashboard
+![image](https://github.com/user-attachments/assets/bc0adde4-9171-4dad-ac2e-6d36f41000b7)
+
+
+Day 3: Optimization
+- Aggregated data by segment
+- Modeled the selection problem as a Knapsack optimization
+- Used Python (`PuLP`) to maximize revenue under $2M budget
+- Selected optimal segments and validated total cost and ROI
+
+  ![image](https://github.com/user-attachments/assets/bbb404a3-dd0a-42e0-bef1-a14c2c1fb273)
+
+Budget Constraint:
+Total available budget: $2,000,000
+Cost per customer mailed: $0.25
+Total potential customers: 10,000,000
+Mailing every customer would cost $2.5 million — which exceeds the budget.
+By leveraging the response score, we can identify the individuals most likely to respond, and use linear optimization to select the most impactful segments
+
+## Conclusion
+Optimal segment selection cost: **$553.50**
+- Expected revenue: **$23.75M**
+- Expected responses: **1212 segments**
+- Most value comes from a few high-efficiency segments
+
+
+
+  
 
 
 
