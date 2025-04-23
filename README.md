@@ -10,3 +10,12 @@ The business wants to maximize either customer responses or revenue from marketi
 - Identify high-performing campaign segments
 - Optimize budget allocation using linear programming
 - Visualize insights and recommendations using Power BI
+
+  ## Project Workflow
+  ### Day 1: Data Understanding & Preprocessing
+- Explored the dataset structure
+- Identified key columns like `RESPONSE_COUNT`, `RESPONSE_SALES_AMT`
+- Understood how campaign segments are defined
+
+https://github.com/RahulB711/Eyewear-Campaign-Strategy/blob/main/eyewear-campaign-strategy/Snapshots/code_snippet.png?raw=true
+
