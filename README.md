@@ -82,7 +82,7 @@ Day 3: Optimization
 - Used Python (`PuLP`) to maximize revenue under $2M budget
 - Selected optimal segments and validated total cost and ROI
 
-  ![image](https://github.com/user-attachments/assets/bbb404a3-dd0a-42e0-bef1-a14c2c1fb273)
+![image](https://github.com/user-attachments/assets/2df57b5f-cb70-432a-9171-c175075f07f6)
 
 Budget Constraint:
 Total available budget: $2,000,000
