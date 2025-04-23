@@ -67,6 +67,8 @@ We can clearly observe that the selected records and expected response begin to 
 
 Campaign segment performance
 ![image](https://github.com/user-attachments/assets/5eb458d8-e62e-4dc3-be8f-d3548f013f92)
+
+
 Scored Campaign Segments using a model (Random Forest) → response_score
 The code in the snapshot generates a summary table of segment performance, which serves as a valuable tool for optimizing budget allocation
 
