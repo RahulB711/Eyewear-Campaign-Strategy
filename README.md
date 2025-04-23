@@ -17,5 +17,5 @@ The business wants to maximize either customer responses or revenue from marketi
 - Identified key columns like `RESPONSE_COUNT`, `RESPONSE_SALES_AMT`
 - Understood how campaign segments are defined
 
-https://github.com/RahulB711/Eyewear-Campaign-Strategy/blob/main/eyewear-campaign-strategy/Snapshots/code_snippet.png?raw=true
+![image](https://github.com/user-attachments/assets/d2e1485b-7a59-4087-8472-1487f36fe779)
 
